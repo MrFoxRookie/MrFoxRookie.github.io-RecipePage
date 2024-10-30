@@ -1,0 +1,105 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 100vw;
+    background-color: hsl(30, 54%, 90%);
+    font-family: Outfit;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.container {
+    margin: 6.5rem auto;
+    width: 39.375rem;
+    max-width: 39.375rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1%;
+    padding: 2rem;
+}
+
+img {
+    width: 100%;
+    border-radius: 2%;
+    max-width: 100%;
+}
+
+h1 {
+    font-family: Young Serif;
+    font-weight: 400;
+    font-size: 2.406rem;
+    line-height: 2.5rem;
+    color: hsl(24, 5%, 18%);
+}
+
+h2 {
+    font-family: Young Serif;
+    color: hsl(14, 45%, 36%);
+    font-weight: 400;
+}
+
+h3 {
+    margin: .625rem;
+    text-indent: -2.188rem;
+    color: hsl(332, 51%, 32%);
+}
+ 
+.line1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.line1 p {
+    width: 50%;
+    text-indent: 2.063rem;
+}
+
+p ~ p {
+    font-weight: 700; 
+    color: hsl(14, 45%, 36%);
+}
+
+li:not(.purple li) {
+    line-height: 1.625rem;
+}
+
+.purple {
+    background-color: hsl(330, 100%, 98%);
+    line-height: 1.8rem; 
+}
+
+hr {
+    border: none; 
+    border-top: .063rem solid hsl(30, 18%, 87%); 
+    height: .063rem;
+}
+
+.purple li::marker {
+   color: hsl(332, 51%, 32%);
+}
+
+li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+li:not(.purple li) {
+margin-left: -1.25rem;
+}
+
+.attribution {
+text-align: center;
+}
+
+@media (max-width: 39.375rem) {
+    .container {      
+        margin: 0;
+        padding: 0;
+    }
+    .query, hr {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
